@@ -1,0 +1,241 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+
+nav{
+    height: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.card_img{
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+}
+
+.txt_sub_heading{
+    color: blue;
+    margin: 5px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.txt_content{
+    margin: 5px;
+    text-align: justify;
+    color: black;
+}
+
+.text_card{
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+}
+
+.nrm_btn1{
+    background-color: rgb(52, 52, 126);
+    border: 2px solid rgba(245, 222, 179, 0);
+    border-radius: 4px;
+    font-size: x-large;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    align-content: center;
+    padding: 1%;
+    margin: 2%;
+}
+
+.cover_stn{
+    background-image: url("./static/images/cover-bg-cropped.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav_cnt{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+}
+
+.nav_ele{
+    margin: 1%;
+    padding: 1%;
+}
+
+.cover_cnt{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column;
+}
+
+.cover_div1{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 250%;
+}
+
+.cover_div2{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 500%;
+}
+
+.cover_div3{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cover_div4{
+    display: flex;
+    justify-content: center;
+}
+
+.services_stn{
+    background-color: aqua;
+    /* background-image: url("./static/images/cover-bg-cropped-dimmed.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services_cnt{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column;
+}
+
+.services_div1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 200%;
+}
+
+.services_div2, .services_div3{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.services_txt{
+    max-width: 25%;
+    display: flex;
+    flex-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.services_img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 4px;
+}
+
+.reviews_stn{
+    background-color: brown;
+    /* background-image: url(./static/images/reviews1.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reviews_cnt{
+    display: flex;
+    flex-flow: column;
+    color: white;
+}
+
+.reviews_div1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 150%;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_stn{
+    background-color: blueviolet;
+}
+
+.about_cnt{
+    display:flex;
+    flex-flow: row;
+}
+
+.about_txt{
+    margin: 3%;
+    padding: 5%;
+    width: 30%
+}
+
+.about_img{
+    margin: 5%
+}
+
+.questions_stn{
+    background-color: rgb(43, 226, 104);
+}
+
+.questions_cnt{
+    display: flex;
+    flex-flow: column;
+}
+
+.questions_div1{
+    display: flex;
+    flex-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color: black;
+    font-size: medium;
+}
+
+.footer_cnt{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.footer_ele{
+    margin: 6px;
+    color: white;
+}
+
+.footer_div1{
+    padding: 3%;
+    display: flex;
+    flex-flow:column
+}
+
+.footer_div2{
+    padding: 3%;
+    display: flex;
+    flex-flow:column
+}
+
+.footer_div3{
+    padding: 3%;
+    display: flex;
+    flex-flow:column
+}
+
+#person{
+    height: 100px;
+    width: 100px;
+}
