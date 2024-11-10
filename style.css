@@ -1,0 +1,160 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main{
+    height: 100%;
+    width: 95%;
+    padding: 1%;
+}
+
+nav{
+    background: rgba(0, 0, 0, 0.185);
+    height: fit-content;
+    min-height: 5%;
+    width: 95%;
+    border: 2px solid black;
+    padding: 1%;
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav button{
+    background: red;
+    padding: 6px;
+}
+
+.nav_ele{
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.nav_div1{
+    height: fit-content;
+    min-height: 30px;
+    width: 20%;
+    min-width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    margin-left: 5%;
+    padding: 1%;
+    border: 2px solid black;
+}
+
+.nav_div2{
+    height: fit-content;
+    min-height: 30px;
+    width: 50%;
+    min-width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+    margin-right: 4%;
+    padding: 1%;
+    border: 2px solid black;
+}
+
+footer{
+    background: purple;
+    height: 5%;
+    width: 100%;
+    border: 2px solid black;
+    padding: 1%;
+}
+
+.hero{
+    background: red;
+    height:fit-content;
+    min-height: 80%;
+    width:100%;
+    padding: 1%;
+    border: 2px solid black;
+    padding-top: 3%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero_div1{
+    height: fit-content;
+    min-height: 400px;
+    width:30%;
+    min-width: 300px;
+    padding: 1%;
+    margin: 2%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.hero_div2{
+    height: fit-content;
+    min-height: 400px;
+    width:50%;
+    min-width: 500px;
+    padding: 1%;
+    margin: 2%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.future{
+    background: green;
+    min-height: 80%;
+    width:100%;
+    padding: 1%;
+    border: 2px solid black;
+    padding-top: 3%;
+    display: flex;
+}
+
+.today{
+    background: blue;
+    min-height: 80%;
+    width:100%;
+    padding: 1%;
+    border: 2px solid black;
+    padding-top: 3%;
+}
+
+.review{
+    background: pink;
+    min-height: 80%;
+    width:100%;
+    padding: 1%;
+    border: 2px solid black;
+    padding-top: 3%;
+}
+
+.contact{
+    background: brown;
+    min-height: 80%;
+    width:100%;
+    padding: 1%;
+    border: 2px solid black;
+    padding-top: 3%;
+}
