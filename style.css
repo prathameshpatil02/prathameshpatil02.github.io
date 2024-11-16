@@ -42,6 +42,10 @@ nav a{
 }
 
 nav button{
+    min-width: 200px;
+    min-height: 50px;
+    max-width: 200px;
+    max-height: 50px;
     border: 2px solid red;
     border-radius: 10px;
     color: white;
@@ -116,8 +120,19 @@ nav button{
 }
 
 .nav_menu{
+    height: auto;
+    width: 100%;
     display: none;
     flex-direction: column;
+    margin: 8px;
+    justify-content: center;
+}
+
+.nav_menu div{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
 }
 
 .nav_div3:hover .nav_menu{
@@ -295,5 +310,9 @@ footer{
     }
     .cmn_div1{
         margin-left: 5px;
+    }
+    nav{
+        position: static;
+        background: url("./static/images/heroLeft.png");
     }
 }
