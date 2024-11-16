@@ -28,7 +28,6 @@ nav{
     width: 100%;
     padding: 0;
     margin: 0;
-    border: 2px solid black;
     position: fixed;
     display: flex;
     flex-flow: row wrap;
@@ -38,32 +37,36 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: 500;
 }
 
 nav button{
+    border: 2px solid red;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
     background: red;
-    padding: 6px;
+    padding: 20px;
 }
 
 .nav_ele{
     padding: 5px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .nav_div1{
-    height: fit-content;
-    min-height: 30px;
+    height: auto;
     width: 20%;
-    flex-basis: 300px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    flex: 0 1 200px;
     align-items: center;
     margin: 5px;
     margin-left: 5%;
     padding: 1%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .nav_div2{
@@ -78,21 +81,38 @@ nav button{
     margin: 5px;
     margin-right: 4%;
     padding: 1%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .nav_div3{
     height: 100%;
     width: 100%;
+    padding: 10px;
     display: none;
     flex-direction: row;
     justify-content: center;
 }
 
+.nav_logo{
+    max-width: 50px;
+    max-height: 50px;
+    display: flex;
+    flex: 0 0 30px;
+    margin-left: 10px;
+}
+
 .nav_btn{
     margin-left: auto;
-    margin-right: 20px;
-    color: red;
+    margin-right: 30px;
+}
+
+.nav_btn div{
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    border-color: white;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0;
 }
 
 .nav_menu{
@@ -106,7 +126,9 @@ nav button{
 .nav_div3:hover .nav_btn{
     display: none;
 }
-
+.nav_div3:hover .nav_logo{
+    display: none;
+}
 
 .nav_mob{
     background-color: white;
@@ -126,7 +148,7 @@ footer{
     width:100%;
     background: url("static/images/heroLeft.png");
     background-color: black;
-    border: 2px double rgb(0, 0, 0);
+    /* border: 2px double rgb(0, 0, 0); */
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -137,7 +159,8 @@ footer{
     height: auto;
     width:49%;
     flex: 1 1 300px;
-    border: 2px solid black;
+    margin: 5%;
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -148,7 +171,7 @@ footer{
     width: 49%;
     flex: 1 1 300px;
     background: url("static/images/heroRight.png");
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
 }
@@ -230,6 +253,7 @@ footer{
 }
 
 
+
 .bg_img{
     height: 100%;
     width: 100%;
@@ -238,6 +262,8 @@ footer{
 .cmn_div1{
     margin-left: 10%;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 20px;
 }
 
@@ -247,12 +273,17 @@ footer{
     height: auto;
     width: auto;
     border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    background: red;
+    padding: 20px;
 }
 
 
 
 
-@media only screen and (max-width: 500px){
+
+@media only screen and (max-width: 1200px){
     .nav_div1{
         display: none;
     }
@@ -261,5 +292,8 @@ footer{
     }
     .nav_div3{
         display: flex;
+    }
+    .cmn_div1{
+        margin-left: 5px;
     }
 }
