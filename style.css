@@ -20,7 +20,7 @@ main{
     /* padding: 1%; */
 }
 
-
+/* NAVIGATION BAR STARTS */
 nav{
     background: rgba(0, 0, 0, 0.109);
     height: fit-content;
@@ -32,6 +32,7 @@ nav{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    z-index: 4;
 }
 
 
@@ -148,15 +149,10 @@ nav button{
 .nav_mob{
     background-color: white;
 }
+/* NAVIGATION BAR ENDS */
 
-footer{
-    background: purple;
-    height: 5%;
-    width: 100%;
-    border: 2px solid black;
-    padding: 1%;
-}
 
+/* HERO SECTION STARTS */
 .hero{
     background: red;
     height:auto;
@@ -190,25 +186,168 @@ footer{
     display: flex;
     align-items: center;
 }
+/* HERO SECTION ENDS */
 
+/* FUTURE SECTION STARTS */
 .future{
     background: green;
-    height: 100%;
-    width: 99%;
-    padding: 1%;
-    border: 2px solid black;
-    padding-top: 3%;
+    height: auto;
+    width: 100%;
+    /* border: 2px solid black; */
+    background: url("./static/images/futurebg.png");
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
+.future_div1{
+    height: auto;
+    max-width: 40%;
+    padding-left: 3%;
+    padding-right: 1%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex: 1 1 400px;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.future_div2{
+    height: auto;
+    width: 59%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex: 1 0 500px;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.future_stk_btn{
+    margin-right: 50px
+}
+
+.future_stk_btn button{
+    border: none;
+}
+
+
+
+.future_stk_0{
+    margin-top: 25%;
+    margin-bottom: 25%;
+    height: fit-content;
+    width: fit-content;
+    min-height: 300px;
+    min-width: 100px;
+    z-index: 0;
+    /* border: 2px solid black; */
+}
+
+.future_stk_1{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-right: -30%;
+    height: auto;
+    min-height: 300px;
+    min-width: 100px;
+    z-index: 1;
+    /* border: 2px solid black; */
+}
+
+.future_stk_2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: -30%;
+    height: auto;
+    min-height: 300px;
+    min-width: 100px;
+    z-index: 2;
+    position: relative;
+}
+/* FUTURE SECTION ENDS */
+
+/* TODAY SECTION STARTS */
 .today{
     background: blue;
-    min-height: 80%;
+    height: auto;
+    min-height: 800px;
     width:100%;
-    padding: 1%;
-    border: 2px solid black;
-    padding-top: 3%;
+    /* border: 2px solid black; */
+    background: url("./static/images/todayBg.png");
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
+
+.today_div1{
+    height: auto;
+    min-height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.today_div2{
+    height: auto;
+    min-height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.today_card{
+    height: 90%;
+    width: 28%;
+    margin: 1%;
+    min-height: 450px;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    display: flex;
+    flex: 1 0 450px;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.tc_top{
+    height: 50%;
+    min-height: 225px;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    
+}
+.tc_mid{
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+.tc_btm{
+    margin-top: -20%;
+    height: 70%;
+    min-height: 275px;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(rgba(36, 38, 51, 0.37), rgb(50, 56, 87));
+}
+
+.hex_icon{
+    margin-top: -30%;
+    margin-bottom:0;
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+    z-index: 1;
+}
+
+/* TODAY SECTION ENDS */
 
 .review{
     background: pink;
@@ -228,6 +367,16 @@ footer{
     padding-top: 3%;
 }
 
+footer{
+    background: purple;
+    height: 5%;
+    width: 100%;
+    border: 2px solid black;
+    padding: 1%;
+}
+
+
+/* COMMON SECTION STARTS */
 .heading_mini{
     margin:0;    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -247,6 +396,27 @@ footer{
     justify-content: left;
 }
 
+.heading_white_med{
+    margin-left: 10%;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight:400;
+    color: white;
+    text-transform: capitalize;
+    justify-content: left;
+}
+
+.heading_black{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xxx-large;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+}
+
 .heading_red{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -258,20 +428,48 @@ footer{
 }
 
 
-.text_content{
+.text_content_white{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
+    text-align: justify;
     color:white;
     word-spacing: 5px;
     justify-content: center;
     line-height: 20px;
 }
 
+.text_content_white_card{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: justify;
+    color:white;
+    word-spacing: 5px;
+    justify-content: center;
+    line-height: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text_content_black{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: justify;
+    color:rgb(0, 0, 0);
+    word-spacing: 5px;
+    justify-content: center;
+    line-height: 20px;
+}
 
 
 .bg_img{
     height: 100%;
     width: 100%;
+}
+
+.img_card{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
 }
 
 .cmn_div1{
@@ -293,11 +491,11 @@ footer{
     background: red;
     padding: 20px;
 }
+/* COMMON SECTION ENDS */
 
 
 
-
-
+/* RESPONSIVE SECTION STARTS */
 @media only screen and (max-width: 1200px){
     .nav_div1{
         display: none;
@@ -316,3 +514,20 @@ footer{
         background: url("./static/images/heroLeft.png");
     }
 }
+
+@media only screen and (max-width: 1200px){
+    .future_stk_2{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .future_stk_1{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .future_stk_0{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+/* RESPONSIVE SECTION ENDS */
