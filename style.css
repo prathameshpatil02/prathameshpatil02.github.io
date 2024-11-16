@@ -202,12 +202,13 @@ nav button{
 
 .future_div1{
     height: auto;
-    max-width: 40%;
+    max-width: fit-content;
     padding-left: 3%;
     padding-right: 1%;
+    margin-left: 20px;
     /* border: 2px solid black; */
     display: flex;
-    flex: 1 1 400px;
+    flex: 1 1 200px;
     flex-flow: column;
     justify-content: center;
 }
@@ -217,7 +218,7 @@ nav button{
     width: 59%;
     /* border: 2px solid black; */
     display: flex;
-    flex: 1 0 500px;
+    flex: 1 0 300px;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
@@ -309,7 +310,7 @@ nav button{
     /* border: 1px solid black; */
     border-radius: 30px;
     display: flex;
-    flex: 1 0 450px;
+    flex: 1 0 300px;
     flex-flow: column;
     justify-content: center;
 }
@@ -473,9 +474,10 @@ footer{
 }
 
 .cmn_div1{
-    margin-left: 10%;
-    margin-right: auto;
+    /* margin-left: 20px;
+    margin-right: auto; */
     margin-top: 0;
+    min-width: 300px;
     margin-bottom: 0;
     padding: 20px;
 }
