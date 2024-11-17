@@ -320,8 +320,9 @@ nav button{
 }
 
 .today_card:hover {
-    min-height: 470px;
-    flex: 0 1 420px;
+    /* min-height: 470px;
+    flex: 0 1 420px; */
+    transform: scale(1.04);
 }
 
 .tc_top{
@@ -359,14 +360,166 @@ nav button{
 
 /* TODAY SECTION ENDS */
 
+/* REVIEW SECTION STARTS */
 .review{
     background: pink;
-    min-height: 80%;
+    min-height: 800px;
     width:100%;
     padding: 1%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding-top: 3%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background: url("./static/images/futurebg.png");
 }
+
+.review_div1{
+    height:auto;
+    min-height: 400px;
+    margin-left: 0%;
+    margin-right: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.review_div1 :nth-child(2){
+    background: url("./static/images/review1_2bg.png");
+}
+
+.review_div1 :nth-child(3){
+    min-width: 400px;
+    margin: 8px;
+}
+
+.review_div1_inner{
+    /* border: 1px solid black; */
+    height: fit-content;
+    min-height: 600px;
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 300px;
+    justify-content: center;
+}
+
+.review_div1_inner :nth-child(2){
+    background: none;
+}
+
+.review_div1_inner .cmn_div1{
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    padding:5px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.review_div1_inner .cmn_div1 .bg_img{
+    margin: 0;
+    max-width: 250px;
+    max-height: 180px;
+}
+
+.review_div1_inner .text_content_white{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-style: normal;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.review_div1_inner:hover{
+    transform: scale(1.01);
+}
+
+.review_div1_inner .cmn_div1:hover{
+    transform: scale(1.01);
+}
+
+.review_div2{
+    height:auto;
+    min-height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    /* border: 1px solid black; */
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.review_div3{
+    height:auto;
+    min-height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.review_div3 .cmn_btn{
+    max-width: 10px;
+    max-height: 50px;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+}
+
+.review_div3 .cmn_btn:hover{
+    transform:scale(1.07)
+}
+
+.review_div3 div{
+    text-align: justify;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review_div3 .cmn_div1{
+    text-align: justify;
+    display: flex;
+    flex-flow: column;
+    min-height: 400px;
+    flex: 0 1 700px;
+    justify-content: center;
+    border-radius: 50px;
+    background: url("./static/images/review3_3.png");
+    background-size:auto;
+    background-position: -70px;
+    align-items: center;
+}
+
+.review_div3 .heading_white_med{
+    margin: 0;
+}
+
+.review_div3 .text_content_white{
+    line-height: 20px;
+    font-size: x-large;
+}
+
+.review_div3 .bg_img{
+    position: relative;
+    bottom: 22px;
+    height: 50px;
+    width: 50px;
+}
+
+.review_div3 .cmn_div1:hover{
+    transform: scale(1.01);
+}
+
+
+/* REVIEW SECTION ENDS */
 
 .contact{
     background: brown;
@@ -483,8 +636,7 @@ footer{
 }
 
 .cmn_div1{
-    /* margin-left: 20px;
-    margin-right: auto; */
+    /* border: 1px solid black; */
     margin-top: 0;
     min-width: 300px;
     margin-bottom: 0;
@@ -523,6 +675,17 @@ footer{
     nav{
         position: static;
         background: url("./static/images/heroLeft.png");
+    }
+    .review_div1{
+        margin: 5%;
+    }
+    .review_div1_inner .cmn_div1{
+        justify-content: center;
+    }
+    .review_div1_inner .cmn_div1 .bg_img{
+        margin: 0;
+        max-width: 450px;
+        max-height: 350px;
     }
 }
 
