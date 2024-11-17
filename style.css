@@ -24,7 +24,7 @@ main{
 nav{
     background: rgba(0, 0, 0, 0.109);
     height: fit-content;
-    min-height: 5%;
+    height: 10%;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -40,6 +40,8 @@ nav a{
     text-decoration: none;
     color: white;
     font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
 }
 
 nav button{
@@ -52,7 +54,9 @@ nav button{
     color: white;
     font-weight: 500;
     background: red;
-    padding: 20px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
 }
 
 .nav_ele{
@@ -166,6 +170,12 @@ nav button{
     justify-content:stretch;
 }
 
+.hero .text_content_white{
+    font-size: large;
+    font-size: large;
+    line-height: 30px;
+}
+
 .hero_div1{
     height: auto;
     width:49%;
@@ -186,6 +196,7 @@ nav button{
     display: flex;
     align-items: center;
 }
+
 /* HERO SECTION ENDS */
 
 /* FUTURE SECTION STARTS */
@@ -199,6 +210,12 @@ nav button{
     flex-flow: row wrap;
     justify-content: space-around;
 }
+
+.future .text_content_black{
+    font-size: large;
+    line-height: 30px;
+}
+
 
 .future_div1{
     height: auto;
@@ -390,6 +407,19 @@ nav button{
     background: url("./static/images/review1_2bg.png");
 }
 
+.review_div1 :nth-child(2) :nth-child(4){
+    justify-content: center;
+}
+
+.review_div1 :nth-child(2) :nth-child(4) button{
+    height: 60px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+
 .review_div1 :nth-child(3){
     min-width: 400px;
     margin: 8px;
@@ -488,6 +518,8 @@ nav button{
     text-align: justify;
     display: flex;
     flex-flow: column;
+    padding-left: 50px;
+    padding-right: 50px;
     min-height: 400px;
     flex: 0 1 700px;
     justify-content: center;
