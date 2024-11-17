@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    /* Dark background */
+    color: #fff;
+    /* margin: 0 auto; */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    /* Transparent background */
+    padding: 10px 20px;
+    /* position: fixed; */
+    /* Makes the navbar stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensures navbar stays above other content */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Boxed Navigation Style */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    /* Center the links within the box */
+    gap: 20px;
+    /* Space between links */
+    background-color: #222;
+    /* Background for the box */
+    padding: 10px 20px;
+    /* Padding inside the box */
+    border-radius: 10px;
+    /* Rounded corners for the box */
+    border: 1px solid #444;
+    /* Optional border for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for depth */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    /* Light gray text */
+    font-size: 1rem;
+    padding: 8px 15px;
+    /* Padding for individual links */
+    border-radius: 5px;
+    /* Rounded corners for hover effect */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #e60000;
+    /* Highlight color for active or hover state */
+    color: #fff;
+    /* White text on hover */
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons a {
+    color: #ddd;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #fff;
+    /* White on hover */
+}
+
+
+
+/* Fullscreen Image Section */
+.fullscreen-image {
+    width: 100%;
+    height: calc(100vh);
+    /* Adjust 60px to match your navbar height */
+    background-image: url('./static/images/cover-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* margin-top: 60px; */
+    /* Offset by the height of the fixed navbar */
+}
+
+/* Optional Overlay Text Styling */
+.overlay-text {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.why-abim-studio {
+    background-color: #111;
+    /* Dark background */
+    color: #999999;
+    /* White text color */
+    padding: 70px;
+
+
+    text-align: justify;
+    font-family: 'Arial', sans-serif;
+}
+
+.why-abim-studio h2 {
+    color: #E50000;
+    /* Bright red color for the heading */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.why-abim-studio p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.expertise {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.expertise h2 {
+    text-align: justify;
+    font-size: 2.5rem;
+    color: #E50000;
+    margin-bottom: 40px;
+}
+
+.expertise-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.expertise-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.number {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    transform: translate(-20%, -50%);
+    z-index: -1;
+}
+
+h3 {
+    font-size: 2.5rem;
+
+    color: #E50000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.link {
+    font-size: 14px;
+    color: #E50000;
+    text-decoration: none;
+
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.footer {
+    background-color: #000;
+    /* Black background for the footer */
+    padding: 60px;
+    text-align: left;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-media p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+.social-icons a:hover {
+    color: #c63c3c;
+    /* Light gray on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+
+    /* position: fixed; */
+
+}
+
+.footer-bottom p {
+    color: #999999;
+
+}
+
+.footer-links a {
+    color: #999999;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: none;
+    color: #ccc;
+    /* Light gray on hover */
+}

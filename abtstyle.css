@@ -690,7 +690,7 @@ body {
     text-align: center;
     margin-top: 2rem;
     padding: 1rem;
-    background: url('./static/images/cover-bg.jpeg') no-repeat center center / cover;
+    background: url('./static/images/interiorFitOut.png') no-repeat center center / cover;
     color: #fff;
 }
 
@@ -716,31 +716,16 @@ body {
 
 
 
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    /* Match the dark background */
-    color: #fff;
-}
-
 .footer {
     background-color: #000;
     /* Black background for the footer */
-    padding: 20px;
-    text-align: center;
+    padding: 60px;
+    text-align: left;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.social-media p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    font-weight: bold;
 }
 
 .social-icons a {
@@ -750,8 +735,16 @@ body {
     text-decoration: none;
 }
 
+.social-media p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
 .social-icons a:hover {
-    color: #ccc;
+    color: #c63c3c;
     /* Light gray on hover */
 }
 
@@ -759,17 +752,28 @@ body {
     margin-top: 20px;
     font-size: 0.9rem;
     border-top: 1px solid #333;
-    padding-top: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+
+    /* position: fixed; */
+
+}
+
+.footer-bottom p {
+    color: #999999;
+
 }
 
 .footer-links a {
-    color: #fff;
-    margin: 0 10px;
+    color: #999999;
+    margin: 0 20px;
     text-decoration: none;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #ccc;
     /* Light gray on hover */
 }
