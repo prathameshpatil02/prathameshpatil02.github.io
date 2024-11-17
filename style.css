@@ -24,7 +24,7 @@ main{
 nav{
     background: rgba(0, 0, 0, 0.109);
     height: fit-content;
-    height: 10%;
+    /* height: 10%; */
     width: 100%;
     padding: 0;
     margin: 0;
