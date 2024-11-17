@@ -240,6 +240,10 @@ nav button{
     align-items: center;
 }
 
+.future_div2 div:hover{
+    transform: scale(1.02);
+}
+
 .future_stk_btn{
     margin-right: 50px
 }
@@ -553,14 +557,26 @@ nav button{
 
 /* REVIEW SECTION ENDS */
 
+/* CONTACT SECTION STARTS*/
 .contact{
     background: brown;
     min-height: 80%;
     width:100%;
-    padding: 1%;
     border: 2px solid black;
-    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.contact_div1{
+    min-height: 500px;
+    display: flex;
+    flex: 1 1 700px;
+    max-width: 900px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+/* CONTACT SECTION ENDSS*/
 
 footer{
     background: purple;
