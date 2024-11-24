@@ -11,6 +11,7 @@ body {
     font-weight: 500;
     font-style: normal;
     /* background-color: #000; */
+    overflow-x: hidden;
 }
 
 
@@ -512,6 +513,7 @@ nav button {
     margin-left: 5%;
     margin-right: 5%; */
     /* border: 1px solid black; */
+    padding-right:90px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -667,14 +669,24 @@ nav button {
 }
 
 .contact_div1_lwr .cmn_btn {
+    align-self: flex-end;
     width: 100px;
-
+    min-height: 50px;
     margin: 6px;
     border: none;
 }
 
 .contact_inp {
     height: 40px;
+    display: flex;
+    flex: 1 1 100px;
+    border-radius: 15px;
+    background-color: azure;
+    margin: 0;
+}
+
+.contact_inp_txt1{
+    height: 100px;
     display: flex;
     flex: 1 1 100px;
     border-radius: 15px;
@@ -737,9 +749,9 @@ footer {
     border: 1px solid black;
 }
 
+
 .contact_stn .heading_white_med {
     margin: 0px;
-    margin-left: 50px;
 }
 
 .contact_stn .cmn_inp {
@@ -784,41 +796,45 @@ footer {
 
 .contact_stn .text_content_white {
     margin: 0px;
-    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: white;
+    margin: 5px;
+    margin-left: 0px;
 }
 
 .hero_img {
     height: auto;
     width: 100%;
-    border: 1px solid black;
     margin: 0;
 }
 
 .hero_img_div1 {
     height: auto;
     width: auto;
-    border: 1px solid black;
+    margin: 0;
 }
 
 .hero_img_div2 {}
 
 .contact_stn_div1 {
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: right;
     align-items: center;
-    flex: 0 0 500px;
+    flex: 1 0 500px;
     /* border: 1px solid black; */
     background: black
 }
 
 .contact_stn_div1_upper {
     display: flex;
-    align-self: flex-start;
-    margin: 20px;
-    margin-left: 50px;
+    width:100%;
+    flex-flow: row;
+    justify-content: center;
+    margin:20px;
 }
 
 .contact_stn_div1_lower {
@@ -827,6 +843,8 @@ footer {
     display: flex;
     flex-flow: row wrap;
     flex: 0 0 500px;
+    margin-left: 30px;
+    justify-content: space-around;
     /* border: 1px solid rgb(255, 255, 255); */
 }
 
@@ -836,7 +854,7 @@ footer {
     display: flex;
     flex-flow: column;
     /* margin-left:50px; */
-    flex: 0 0 400px;
+    flex: 0 1 600px;
     /* border: 1px solid rgb(255, 255, 255); */
 }
 
@@ -858,7 +876,8 @@ footer {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-    flex: 1 0 400px;
+    flex: 0 1 700px;
+    margin-right:10px;
     /* border: 1px solid rgb(255, 255, 255); */
 }
 
@@ -866,6 +885,13 @@ footer {
     height: 50px;
     width: 200px;
     margin-left: 50px;
+}
+
+.contact_stn_div1_lower_right .cmn_div1 .heading_white_med{
+    margin: 0;
+    padding-left: 50px;
+    padding-top:30px;
+    font-weight: bold;
 }
 
 .contact_stn_div1_lower_right form {
@@ -911,7 +937,6 @@ footer {
 /* COMMON SECTION STARTS */
 .heading_mini {
     margin: 0;
-
     color: white;
     font-weight: 600;
     letter-spacing: 0.3em;
@@ -920,8 +945,6 @@ footer {
 
 .heading_white {
     margin: 0;
-
-
     font-size: xxx-large;
     font-weight: bold;
     color: white;
@@ -1060,9 +1083,9 @@ footer {
 .cmn_txtarea {
     background-color: rgba(240, 248, 255, 0);
     border: none;
-    min-height: 100%;
-    min-width: 100%;
-    padding-left: 50px;
+    min-height: 95%;
+    min-width: 95%;
+    /* padding-left: 50px; */
     font-size: 0.75rem;
 }
 
@@ -1081,12 +1104,14 @@ input::placeholder {
 }
 
 textarea {
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
     outline: none;
     overflow: scroll;
-    padding: 10px;
+    /* padding: 10px;
     padding-right: 40px;
+    padding-top: 5px;  CHANGE001*/
+    padding-top:5px;
 
 }
 
@@ -1111,6 +1136,13 @@ textarea {
     scrollbar-width: none;
     font-size: 0.75rem;
     /* Firefox */
+}
+
+.heading_white_med{
+    color:white;
+    font-family: "Raleway", sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 /* COMMON SECTION ENDS */
@@ -1152,6 +1184,16 @@ textarea {
         margin: 0;
         max-width: 450px;
         max-height: 350px;
+    }
+
+    .review_div3{
+        padding:10px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .review_div3{
+        padding:10px;
     }
 }
 
