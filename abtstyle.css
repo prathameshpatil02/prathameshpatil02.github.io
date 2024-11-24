@@ -1,18 +1,152 @@
+* {
+    margin: 0%;
+    ;
+}
+
 body {
     height: 100%;
     width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #000;
 }
 
 nav {
-    height: 10%;
+    background: rgba(0, 0, 0, 0.109);
+    height: fit-content;
+    /* height: 10%; */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
 }
 
-a {
+
+nav a {
     text-decoration: none;
     color: white;
+    font-weight: 500;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large; */
 }
+
+nav button {
+    min-width: 200px;
+    min-height: 50px;
+    max-width: 200px;
+    max-height: 50px;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    background: red;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav_ele {
+    padding: 5px;
+    /* border: 2px solid black; */
+}
+
+.nav_div1 {
+    height: auto;
+    width: 5%;
+    margin: 5px;
+    margin-left: 5%;
+    padding: 1%;
+    /* border: 2px solid black; */
+}
+
+.nav_div2 {
+    height: fit-content;
+    min-height: 30px;
+    width: 50%;
+    flex-basis: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+    margin-right: 4%;
+    padding: 1%;
+    /* border: 2px solid black; */
+}
+
+.nav_div3 {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav_logo {
+    max-width: 50px;
+    max-height: 50px;
+    display: flex;
+    flex: 0 0 30px;
+    margin-left: 10px;
+}
+
+.nav_btn {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.nav_btn div {
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    border-color: white;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0;
+}
+
+.nav_menu {
+    height: auto;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin: 8px;
+    justify-content: center;
+}
+
+.nav_menu div {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav_div3:hover .nav_menu {
+    display: flex;
+}
+
+.nav_div3:hover .nav_btn {
+    display: none;
+}
+
+.nav_div3:hover .nav_logo {
+    display: none;
+}
+
+.nav_mob {
+    background-color: white;
+}
+
+/* NAVIGATION BAR ENDS */
 
 .card_img {
     border-radius: 6px;
@@ -43,10 +177,10 @@ a {
     background-color: rgb(52, 52, 126);
     border: 2px solid rgba(245, 222, 179, 0);
     border-radius: 4px;
-    font-size: x-large;
+    /* font-size: x-large;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
+    font-weight: 100; */
     align-content: center;
     padding: 1%;
     margin: 2%;
@@ -375,18 +509,18 @@ footer {
 
 /* About Us Section */
 /* Reset default browser styles */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #111;
     /* Dark background */
-    color: #fff;
-}
+/* color: #fff;
+} */
 
 /* About Us Section Styles */
 .about-us {
@@ -404,18 +538,19 @@ body {
 }
 
 .about-us p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     max-width: 800px;
     margin: 0 auto 40px;
     color: #ddd;
+    text-align: center;
     /* Light gray text for readability */
 }
 
 .cards-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
     /* Ensure responsive behavior */
 }
@@ -427,8 +562,9 @@ body {
     /* Soft shadow for depth */
     border-radius: 10px;
     padding: 20px;
-    max-width: 500px;
-    flex: 1 1 300px;
+
+    max-width: 600px;
+    flex: 1 1 40px;
     /* Responsive sizing */
     color: #fff;
     text-align: left;
@@ -442,18 +578,32 @@ body {
 }
 
 .card .icon img {
-    width: 50px;
+    width: 35px;
     margin-bottom: 15px;
 }
 
-.card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.card .icon {
+    display: flex;
+    /* Enables Flexbox */
+
+    justify-content: flex-start;
+    /* Centers items vertically */
+    align-items: center;
+    /* Centers items horizontally */
+
+    text-align: center;
+}
+
+.card .icon h2 {
+    font-size: 1rem;
+    padding-left: 10px;
+
 }
 
 .card p {
     font-size: 1rem;
     line-height: 1.5;
+    text-align: justify;
     color: #ccc;
     /* Slightly lighter text for contrast */
 }
@@ -573,13 +723,6 @@ body {
 
 
 
-body {
-    background-color: #181818;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 .faq-section {
     max-width: 1200px;
@@ -587,18 +730,25 @@ body {
     padding: 1rem;
 }
 
-.faq-header {
-    text-align: center;
+.faq-main-div {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
+
+
 .faq-header h2 {
+    color: #ff0000;
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .faq-header p {
-    font-size: 1rem;
+    font-size: 15px;
     color: #aaa;
     margin-bottom: 1.5rem;
 }
@@ -607,9 +757,14 @@ body {
     background-color: #ff0000;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     cursor: pointer;
     border-radius: 5px;
+    font-size: small;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .faq-container {
@@ -617,6 +772,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
     /* Two columns */
     gap: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .faq-item {
@@ -642,6 +801,10 @@ body {
     text-align: left;
     /* Align the text to the left */
     width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .faq-question:hover {
@@ -672,12 +835,14 @@ body {
     max-height: 0;
     overflow: hidden;
     padding: 0 1rem;
-    background-color: #222;
+    background-color: #000;
     transition: max-height 0.3s ease-out;
 }
 
 .faq-answer p {
+    color: white;
     margin: 0;
+    font-size: 15px;
     padding: 1rem 0;
 }
 
@@ -686,16 +851,23 @@ body {
     /* Adjust height based on content */
 }
 
-.faq-footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    background: url('./static/images/interiorFitOut.png') no-repeat center center / cover;
+
+.faq-footer-main {
+    display: flex;
+    text-align: left;
+    margin-top: 4rem;
+    padding: 4rem;
+    background: url('./static/images/question.png') no-repeat center center / cover;
     color: #fff;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 .faq-footer p {
     margin: 0.5rem 0;
+    color: #aaa;
+    font-size: small;
 }
 
 .contact-btn {
@@ -704,27 +876,27 @@ body {
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.75rem;
     border-radius: 5px;
 }
 
 
 
 
-
-
-
-
-
-
 .footer {
-    background-color: #000;
+    background-color: #0F0F0F;
     /* Black background for the footer */
     padding: 60px;
     text-align: left;
 }
 
 .footer-content {
-    max-width: 1200px;
+    color: white;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -736,6 +908,7 @@ body {
 }
 
 .social-media p {
+    color: white;
     margin-bottom: 20px;
     font-size: 1rem;
     font-weight: bold;
