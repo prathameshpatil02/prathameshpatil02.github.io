@@ -198,10 +198,9 @@ nav button {
 }
 
 .hero_div2 {
-    height: auto;
+    height: 700px;
     width: 49%;
     flex: 1 1 300px;
-    background: url("static/images/heroRight.png");
     /* border: 2px solid black; */
     display: flex;
     align-items: center;
@@ -281,33 +280,36 @@ nav button {
 .future_stk_0 {
     margin-top: 25%;
     margin-bottom: 25%;
+    margin-right: 3%;
     height: fit-content;
     width: fit-content;
     min-height: 300px;
     min-width: 100px;
     z-index: 0;
-    /* border: 2px solid black; */
+    border: 10px solid rgb(253, 253, 253);
 }
 
 .future_stk_1 {
     margin-top: 15%;
     margin-bottom: 15%;
-    margin-right: -30%;
+    margin-right: -20%;
     height: auto;
     min-height: 300px;
     min-width: 100px;
     z-index: 1;
     /* border: 2px solid black; */
+    border: 10px solid rgb(253, 253, 253);
 }
 
 .future_stk_2 {
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-right: -30%;
+    margin-right: -24%;
     height: auto;
     min-height: 300px;
     min-width: 100px;
     z-index: 2;
+    border: 10px solid rgb(253, 253, 253);
     position: relative;
 }
 
@@ -428,7 +430,7 @@ nav button {
     height: auto;
     min-height: 400px;
     margin-left: 0%;
-    margin-right: 5%;
+    /* margin-right: 5%; */
     /* border: 1px solid black; */
     display: flex;
     flex-flow: row wrap;
@@ -527,7 +529,7 @@ nav button {
     margin-left: 5%;
     margin-right: 5%; */
     /* border: 1px solid black; */
-    padding-right: 90px;
+    /* padding-right:90px; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -608,6 +610,8 @@ nav button {
     justify-content: center;
     align-items: center;
     background: url("./static/images/contactBg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .contact_div1 {
@@ -818,9 +822,11 @@ footer {
 }
 
 .hero_img {
-    height: auto;
-    width: 100%;
-    margin: 0;
+   background: url("./static/images/contactBg.png");
+   background-position: -10px;
+   background-size:cover;
+   height: 800px;
+   width: 100%;
 }
 
 .hero_img_div1 {
@@ -1202,6 +1208,9 @@ textarea {
 
     .review_div3 {
         padding: 10px;
+    }
+    .hero_div2 {
+        height: 400px;
     }
 }
 

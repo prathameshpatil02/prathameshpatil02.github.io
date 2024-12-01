@@ -12,10 +12,26 @@ function redirectToGmail() {
 
 function redirectToWhatsApp() {
     // Construct the WhatsApp URL
-    const phone = "917066961106"; // Replace with your WhatsApp phone number (include country code, no '+' sign)
+    const phone = "919960893927"; // Replace with your WhatsApp phone number (include country code, no '+' sign)
     const message = "Hello Nilesh, I would like to know more about your services."; // Your pre-filled message
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     // Redirect to WhatsApp
     window.open(whatsappUrl, '_blank'); // Opens WhatsApp in a new tab
 }
+
+// function redirectToWhatsAppContactUs(form) {
+//     // Construct the WhatsApp URL
+//     const phone = "919960893927"; // Replace with your WhatsApp phone number (include country code, no '+' sign)
+//     // const name = document.querySelector("#contact_name")
+//     const name = form["name"].value
+//     // const email = document.querySelector("#contact_email")
+//     const email = form["email"].value
+//     // const msg = document.querySelector("#contact_msg")
+//     const msg = form["msg"].value
+//     const message = "Hello Nilesh, I would like to know more about your services."; // Your pre-filled message
+//     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(name+email+msg)}`;
+
+//     // Redirect to WhatsApp
+//     window.open(whatsappUrl, '_blank'); // Opens WhatsApp in a new tab
+// }

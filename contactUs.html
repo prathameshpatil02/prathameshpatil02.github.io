@@ -51,12 +51,6 @@
     </nav>
 
     <section class="hero_img">
-        <div class="hero_img_div1">
-            <img src="./static/images/contactHero.png" alt="" class="bg_img">
-        </div>
-        <div class="hero_img_div2">
-
-        </div>
     </section>
 
 
@@ -90,28 +84,28 @@
 
                 </div>
                 <div class="contact_stn_div1_lower_right">
-                    <form action="" method="post">
+                    <form action="">
                         <div class="cmn_div1">
                             <p class="heading_white_med"> Lets get in Touch </p>
                         </div>
                         <div class="cmn_div1">
                             <div class="contact_inp">
-                                <input type="text" name="name" id="" class="cmn_inp" placeholder="name">
+                                <input type="text" name="name" id="contact_name" class="cmn_inp" placeholder="name">
                             </div>
                         </div>
                         <div class="cmn_div1">
                             <div class="contact_inp">
-                                <input type="email" name="email" id="" class="cmn_inp" placeholder="email">
+                                <input type="email" name="email" id="contact_email" class="cmn_inp" placeholder="email">
                             </div>
                         </div>
                         <div class="cmn_div1">
                             <div class="contact_inp_txt">
-                                <textarea name="message" class="cmn_txtarea" id="" cols="30" rows="10"
+                                <textarea name="message" class="cmn_txtarea" id="contact_msg" cols="30" rows="10"
                                     placeholder="message"></textarea>
                             </div>
                         </div>
                         <div class="cmn_div1">
-                            <input type="submit" value="Send Message" class="cmn_btn">
+                            <input type="submit" value="Send Message" class="cmn_btn" onclick="redirectToWhatsApp()">
                         </div>
                     </form>
                 </div>
