@@ -26,6 +26,7 @@ nav {
     padding: 0;
     margin: 0;
     position: absolute;
+    background: transparent;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -86,6 +87,15 @@ nav button {
     margin-right: 4%;
     padding: 1%;
     /* border: 2px solid black; */
+}
+
+.nav_div2 .ask-question-btn {
+    cursor: pointer;
+    font-size: small;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .nav_div3 {
@@ -205,6 +215,10 @@ nav button {
     font-optical-sizing: auto;
     font-weight: 500;
 
+}
+
+.cmn_div1 .cmn_btn {
+    cursor: pointer;
 }
 
 /* HERO SECTION ENDS */
@@ -513,7 +527,7 @@ nav button {
     margin-left: 5%;
     margin-right: 5%; */
     /* border: 1px solid black; */
-    padding-right:90px;
+    padding-right: 90px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -685,7 +699,7 @@ nav button {
     margin: 0;
 }
 
-.contact_inp_txt1{
+.contact_inp_txt1 {
     height: 100px;
     display: flex;
     flex: 1 1 100px;
@@ -831,10 +845,10 @@ footer {
 
 .contact_stn_div1_upper {
     display: flex;
-    width:100%;
+    width: 100%;
     flex-flow: row;
     justify-content: center;
-    margin:20px;
+    margin: 20px;
 }
 
 .contact_stn_div1_lower {
@@ -877,7 +891,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     flex: 0 1 700px;
-    margin-right:10px;
+    margin-right: 10px;
     /* border: 1px solid rgb(255, 255, 255); */
 }
 
@@ -887,10 +901,10 @@ footer {
     margin-left: 50px;
 }
 
-.contact_stn_div1_lower_right .cmn_div1 .heading_white_med{
+.contact_stn_div1_lower_right .cmn_div1 .heading_white_med {
     margin: 0;
     padding-left: 50px;
-    padding-top:30px;
+    padding-top: 30px;
     font-weight: bold;
 }
 
@@ -1111,7 +1125,7 @@ textarea {
     /* padding: 10px;
     padding-right: 40px;
     padding-top: 5px;  CHANGE001*/
-    padding-top:5px;
+    padding-top: 5px;
 
 }
 
@@ -1138,8 +1152,8 @@ textarea {
     /* Firefox */
 }
 
-.heading_white_med{
-    color:white;
+.heading_white_med {
+    color: white;
     font-family: "Raleway", sans-serif;
     font-size: xx-large;
     font-weight: bolder;
@@ -1186,14 +1200,14 @@ textarea {
         max-height: 350px;
     }
 
-    .review_div3{
-        padding:10px;
+    .review_div3 {
+        padding: 10px;
     }
 }
 
-@media only screen and (max-width: 1200px){
-    .review_div3{
-        padding:10px;
+@media only screen and (max-width: 1200px) {
+    .review_div3 {
+        padding: 10px;
     }
 }
 

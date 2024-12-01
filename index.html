@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
     <script src="https://kit.fontawesome.com/684a857e9e.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -25,7 +26,9 @@
                 <a href="./aboutUs.html" class="nav_ele">About</a>
                 <a href="./services.html" class="nav_ele">Services</a>
                 <a href="./contactUs.html" class="nav_ele">Contact</a>
-                <button>Request a demo</button>
+                <div class="ask-question-btn">
+                    <button class="ask-question-btn" onclick="redirectToGmail()">Request a demo</button>
+                </div>
             </div>
             <div class="nav_div3">
                 <div class="nav_logo">
@@ -41,7 +44,9 @@
                     <div><a href="./aboutUs.html" class="nav_ele">About</a></div>
                     <div><a href="./services.html" class="nav_ele">Services</a></div>
                     <div><a href="./contactUs.html" class="nav_ele">Contact</a></div>
-                    <div><button>Request a demo</button></div>
+                    <div class="ask-question-btn">
+                        <button class="ask-question-btn" onclick="redirectToGmail()">Request a demo</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -61,7 +66,7 @@
                     </p>
                 </div>
                 <div class="cmn_div1">
-                    <input type="button" value="Get Started" class="cmn_btn">
+                    <input type="button" value="Get Started" class="cmn_btn" onclick="redirectToWhatsApp()">
                 </div>
             </div>
             <div class="hero_div2">

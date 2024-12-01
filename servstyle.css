@@ -21,6 +21,7 @@ nav {
     padding: 0;
     margin: 0;
     position: absolute;
+    background: transparent;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -146,15 +147,24 @@ nav button {
     background-color: white;
 }
 
+.nav_div2 .ask-question-btn {
+    cursor: pointer;
+    font-size: small;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 /* NAVIGATION BAR ENDS */
 
 
 /* Fullscreen Image Section */
 .fullscreen-image {
     width: 100%;
-    height: calc(100vh);
+    height: calc(75vh);
     /* Adjust 60px to match your navbar height */
-    background-image: url('./static/images/cover-bg.jpeg');
+    background-image: url('./static/images/aboutus.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -272,8 +282,20 @@ p {
 }
 
 .image img {
-    max-width: 100%;
+    /* max-width: 100%;
+    border-radius: 10px; */
+    width: 100%;
+    /* Ensure the image fills its container */
+    max-width: 500px;
+    /* Optional: Limit the image's maximum size */
+    height: 300px;
+    /* Fixed height for a rectangular look */
+    object-fit: cover;
+    /* Crop or scale the image to fill the rectangle */
     border-radius: 10px;
+    /* Optional: Add rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Add a subtle shadow for depth */
 }
 
 

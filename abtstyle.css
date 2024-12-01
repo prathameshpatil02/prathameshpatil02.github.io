@@ -21,6 +21,7 @@ nav {
     padding: 0;
     margin: 0;
     position: absolute;
+    background: transparent;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -480,16 +481,16 @@ footer {
 /* Fullscreen Image Section */
 .fullscreen-image {
     width: 100%;
-    height: calc(100vh);
+    height: calc(75vh);
     /* Adjust 60px to match your navbar height */
-    background-image: url('./static/images/cover-bg.jpeg');
+    background-image: url('./static/images/abtus3.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
+    /* background-repeat: no-repeat;
+    display: flex; */
+    /* align-items: center;
     justify-content: center;
-    position: relative;
+    position: relative; */
     /* margin-top: 60px; */
     /* Offset by the height of the fixed navbar */
 }
@@ -753,6 +754,15 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+.nav_div2 .ask-question-btn {
+    cursor: pointer;
+    font-size: small;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .ask-question-btn {
     background-color: #ff0000;
     color: #fff;
@@ -766,6 +776,8 @@ footer {
     font-weight: 500;
     font-style: normal;
 }
+
+
 
 .faq-container {
     display: grid;
